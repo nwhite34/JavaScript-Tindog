@@ -1,0 +1,321 @@
+html {
+    background-color: grey;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 550px;
+    height: 892px;
+    margin: 10px auto;
+}
+
+
+#card .dog-img {
+    width: 550px;
+    height: 751px;
+    border-radius: 15px;
+}
+
+.dog-img {
+    width: 534px;
+    height: 751px;
+    left: 8px;
+    border-radius: 15px
+}
+
+
+#card {
+    position: relative;
+    width: 550px;
+    height: 751.44px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#card .dog-img {
+    width: calc(100% - 10px);
+    /* Reduce the total subtraction value */
+    height: auto;
+    border-radius: 15px;
+    margin: 0 5px;
+    /* Reduce the margin to reduce the space */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+}
+
+
+
+.dog-info {
+    position: absolute;
+    bottom: 60px;
+    /* Adjusted bottom property to create space */
+    left: 20px;
+    /* Ensure both have the same 'left' value */
+    padding-bottom: 10px;
+    color: white;
+}
+
+h4 {
+    position: absolute;
+    bottom: -70px;
+    /* Adjusted bottom property to create space */
+    left: 1px;
+    /* Ensure both have the same 'left' value */
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 158px;
+    height: 36px;
+}
+
+.dog-bio {
+    position: absolute;
+    bottom: -50px;
+    left: 2px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 530px;
+    height: auto;
+    /* Change this to auto so that it expands as text wraps */
+}
+
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 550px;
+    height: 81px;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 151px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    margin: 0 auto;
+}
+
+#reject-button {
+    margin-right: 30px;
+    cursor: pointer;
+    width: 91px;
+    height: 91px;
+    top: 776px;
+    left: 287px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 10px 20px 0px #E9E9EA;
+}
+
+#reject-button:hover {
+    background: #FFE7EF;
+}
+
+#accept-button {
+    margin-top: 30px;
+    width: 91px;
+    height: 91px;
+    top: 776px;
+    left: 287px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 10px 20px 0px #E9E9EA;
+    cursor: pointer;
+}
+
+#accept-button:hover {
+    background: #DBFFF4;
+}
+
+.headerimg1 {
+    width: 32.325927734375px;
+    height: 34px;
+    top: 24px;
+    left: 18px;
+    padding: 0 10px;
+}
+
+.headerimg2 {
+    width: 84px;
+    height: 42px;
+    top: 20px;
+    left: 233px;
+    border-radius: 30px;
+}
+
+.headerimg3 {
+    width: 34px;
+    height: 34px;
+    top: 24px;
+    left: 497px;
+    padding: 0 10px;
+}
+
+img.path_to_like_image.png {
+    width: 200px;
+    height: 200px;
+}
+
+.like-image {
+    background-image: url('images/badge-like.png');
+}
+
+.dislike-image,
+.like-image {
+    width: 233px;
+    height: 116px;
+    top: 50px;
+    left: 20px;
+    border-radius: 10px;
+    border: 8px;
+    transform: rotate(330deg);
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.dislike-image {
+    background-image: url('images/badge-nope.png');
+}
+
+@keyframes swipeRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(2%);
+    }
+
+    
+}
+
+@keyframes swipeLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-2%);
+    }
+    
+}
+
+.like-animation {
+    animation: swipeRight 0.5s ease-out forwards;
+    /* Change duration here */
+}
+
+.dislike-animation {
+    animation: swipeLeft 0.5s ease-out forwards;
+    /* And here */
+}
+
+.out-of-people {
+    font-size: 24px;
+    color: grey;
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    position: relative;
+    font-size: 2em;
+    color: white;
+    padding: 15px 90px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FD267Aed, #FF7854);
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1:hover {
+    position: relative;
+    font-size: 2em;
+    color: white;
+    padding: 15px 90px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FF7854, #FD267Aed);
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.network-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    animation-name: network-impulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+
+@keyframes network-impulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+#network-icon {
+    display: none;
+}
+
+#accept-button:disabled,
+#reject-button:disabled {
+    background-color: white;
+    color: grey;
+    cursor: not-allowed;
+}
+
+.my-image {
+    margin-top: 300px;
+    border: grey solid 2px;
+    border-radius: 50%;
+}
+
+.disabled-button {
+    background-image: url('icon-heart-grey.png');
+    filter: grayscale(100%);
+}
+
+.disabled-reject-button {
+    background-image: url('icon-cross-grey.png');
+    filter: grayscale(100%);
+}
